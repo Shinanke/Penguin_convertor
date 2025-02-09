@@ -12,15 +12,31 @@
         <h2>Currency Converter</h2>
         <div class="converter">
             <input type="number" id="amount" placeholder="Enter amount">
-            <select id="fromCurrency">
-                <option value="INR">INR🇮🇳</option>
-                <option value="IRR">IRR🇮🇷</option>
+            
+            <!-- From Currency Dropdown -->
+            <select id="currencyFrom">
+                <option value="INR">INR 🇮🇳</option>
+                <option value="IRR">IRR 🇮🇷</option>
+                <option value="NPR">NPR 🇳🇵</option>
+                <option value="BTN">BTN 🇧🇹</option>
+                <option value="CNY">CNY 🇨🇳</option>
+                <option value="AUD">AUD 🇦🇺</option>
+                <option value="JPY">JPY 🇯🇵</option>
             </select>
+
             <span>to</span>
-            <select id="toCurrency">
-                <option value="IRR">IRR🇮🇷</option>
-                <option value="INR">INR🇮🇳</option>
+            
+            <!-- To Currency Dropdown -->
+            <select id="currencyTo">
+                <option value="INR">INR 🇮🇳</option>
+                <option value="IRR">IRR 🇮🇷</option>
+                <option value="NPR">NPR 🇳🇵</option>
+                <option value="BTN">BTN 🇧🇹</option>
+                <option value="CNY">CNY 🇨🇳</option>
+                <option value="AUD">AUD 🇦🇺</option>
+                <option value="JPY">JPY 🇯🇵</option>
             </select>
+            
             <button onclick="convertCurrency()">Convert</button>
         </div>
         <p id="result"></p>
