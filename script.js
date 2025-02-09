@@ -1,22 +1,18 @@
-async function convertCurrency() {
-    const amount = document.getElementById('amount').value;
-    const fromCurrency = document.getElementById('fromCurrency').value;
-    const toCurrency = document.getElementById('toCurrency').value;
-    const resultElement = document.getElementById('result');
+// script.js
+function convertCurrency() {
+  let fromCurrency = document.getElementById('currencyFrom').value;
+  let toCurrency = document.getElementById('currencyTo').value;
+  let amount = document.getElementById('amount').value;
 
-    if (!amount) {
-        resultElement.textContent = "Please enter an amount.";
-        return;
-    }
+  // API URL to fetch exchange rates
+  let apiUrl = `https://api.exchangerate-api.com/v4/latest/${fromCurrency}`;
 
-    try {
-        const response = await fetch(`https://api.exchangerate-api.com/v4/latest/${fromCurrency}`);
-        const data = await response.json();
-        const rate = data.rates[toCurrency];
-        const convertedAmount = (amount * rate).toFixed(2);
-
-        resultElement.textContent = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
-    } catch (error) {
-        resultElement.textContent = "Error fetching exchange rates.";
-    }
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+      let rate = data.rates[toCurrency];
+      let convertedAmount = (amount * rate).toFixed(2);
+      document.getElementById('result').innerText = `Converted Amount: ${convertedAmount} ${toCurrency}`;
+    })
+    .catch(error => console.error("Error fetching the exchange rate:", error));
 }
