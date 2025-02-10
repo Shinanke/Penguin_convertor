@@ -126,3 +126,14 @@ html {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
+/* Transparent Dropdown Background */
+select {
+    background-color: rgba(0, 0, 0, 0.75); /* 75% transparent black */
+    color: white;
+}
+
+/* Optional: Ensure text inside dropdown is readable */
+select option {
+    background-color: rgba(0, 0, 0, 0.75); /* 75% transparent black */
+    color: white;
+    }
