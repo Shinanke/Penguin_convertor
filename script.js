@@ -1,4 +1,3 @@
-// script.js
 function convertCurrency() {
   let fromCurrency = document.getElementById('currencyFrom').value;
   let toCurrency = document.getElementById('currencyTo').value;
@@ -28,3 +27,14 @@ function convertCurrency() {
     })
     .catch(error => console.error("Error fetching the exchange rate:", error));
 }
+
+// Swap Button Functionality
+document.getElementById('swapButton').addEventListener('click', function() {
+  let fromCurrency = document.getElementById('currencyFrom');
+  let toCurrency = document.getElementById('currencyTo');
+
+  // Swap the selected values
+  let temp = fromCurrency.value;
+  fromCurrency.value = toCurrency.value;
+  toCurrency.value = temp;
+});
