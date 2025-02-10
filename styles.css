@@ -24,31 +24,59 @@ body {
     gap: 10px;
 }
 
-/* Bigger Input Box */
 input[type="number"] {
     width: 100%;
     padding: 12px;
     font-size: 18px;
-    border-radius: 5px;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* Yellow 💛 Convert Button */
+/* Updated Button */
 button {
     background-color: #FFD700;
     color: black;
     border: none;
-    padding: 12px;
+    padding: 10px;
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
-    font-size: 16px;
 }
 
 button:hover {
     background-color: #FFC107;
 }
 
+/* Dropdown Smooth Scrolling */
+select {
+    appearance: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    max-height: 200px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+select::-webkit-scrollbar {
+    width: 8px;
+}
+
+select::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+select::-webkit-scrollbar-thumb {
+    background: #FFD700;
+    border-radius: 5px;
+}
+
+/* Glowing Text */
 .glowing-text {
     font-size: 16px;
     color: #ffffff;
@@ -59,6 +87,6 @@ button:hover {
 
 @keyframes glowing {
     0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700; }
-    50% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFC107, 0 0 30px #FFC107, 0 0 40px #FFC107, 0 0 50px #FFC107; }
+    50% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff5722, 0 0 30px #ff5722, 0 0 40px #ff5722, 0 0 50px #ff5722; }
     100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700; }
 }
