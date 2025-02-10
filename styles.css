@@ -24,15 +24,16 @@ body {
     gap: 10px;
 }
 
+/* Restored Input Box */
 input[type="number"] {
-    width: 100%;
-    padding: 12px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: auto;
 }
 
-/* Updated Button */
+/* Updated Yellow Button */
 button {
     background-color: #FFD700;
     color: black;
