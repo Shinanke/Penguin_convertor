@@ -24,18 +24,29 @@ body {
     gap: 10px;
 }
 
+/* Bigger Input Box */
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Yellow 💛 Convert Button */
 button {
-    background-color: #FFD700; /* Dark yellow 💛 */
+    background-color: #FFD700;
     color: black;
     border: none;
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #E6BE00; /* Slightly darker yellow on hover */
+    background-color: #FFC107;
 }
 
 .glowing-text {
@@ -47,7 +58,7 @@ button:hover {
 }
 
 @keyframes glowing {
-    0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #6200ea, 0 0 30px #6200ea, 0 0 40px #6200ea, 0 0 50px #6200ea; }
-    50% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff5722, 0 0 30px #ff5722, 0 0 40px #ff5722, 0 0 50px #ff5722; }
-    100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #6200ea, 0 0 30px #6200ea, 0 0 40px #6200ea, 0 0 50px #6200ea; }
+    0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700; }
+    50% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFC107, 0 0 30px #FFC107, 0 0 40px #FFC107, 0 0 50px #FFC107; }
+    100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700; }
 }
