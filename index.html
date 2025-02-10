@@ -13,41 +13,44 @@
         <div class="converter">
             <input type="text" id="amount" placeholder="Enter amount">
             
-            <!-- From Currency Dropdown -->
-            <select id="currencyFrom">
-                <option value="INR">INR 🇮🇳</option>
-                <option value="IRR">IRR 🇮🇷</option>
-                <option value="NPR">NPR 🇳🇵</option>
-                <option value="BTN">BTN 🇧🇹</option>
-                <option value="CNY">CNY 🇨🇳</option>
-                <option value="AUD">AUD 🇦🇺</option>
-                <option value="JPY">JPY 🇯🇵</option>
-                <option value="USD">USD 🇺🇸</option>
-                <option value="BRL">BRL 🇧🇷</option>
-                <option value="ILS">ILS 🇮🇱</option>
-                <option value="EUR">EUR 🇩🇪</option>
-                <option value="GBP">GBP 🇬🇧</option>
-                <option value="ITL">ITL 🇮🇹</option>
-            </select>
+            <div class="currency-selection">
+                <!-- From Currency Dropdown -->
+                <select id="currencyFrom">
+                    <option value="INR">INR 🇮🇳</option>
+                    <option value="IRR">IRR 🇮🇷</option>
+                    <option value="NPR">NPR 🇳🇵</option>
+                    <option value="BTN">BTN 🇧🇹</option>
+                    <option value="CNY">CNY 🇨🇳</option>
+                    <option value="AUD">AUD 🇦🇺</option>
+                    <option value="JPY">JPY 🇯🇵</option>
+                    <option value="USD">USD 🇺🇸</option>
+                    <option value="BRL">BRL 🇧🇷</option>
+                    <option value="ILS">ILS 🇮🇱</option>
+                    <option value="EUR">EUR 🇩🇪</option>
+                    <option value="GBP">GBP 🇬🇧</option>
+                    <option value="ITL">ITL 🇮🇹</option>
+                </select>
 
-            <span>to</span>
-            
-            <!-- To Currency Dropdown (Moved USD to First Position) -->
-            <select id="currencyTo">
-                <option value="USD">USD 🇺🇸</option>
-                <option value="INR">INR 🇮🇳</option>
-                <option value="IRR">IRR 🇮🇷</option>
-                <option value="NPR">NPR 🇳🇵</option>
-                <option value="BTN">BTN 🇧🇹</option>
-                <option value="CNY">CNY 🇨🇳</option>
-                <option value="AUD">AUD 🇦🇺</option>
-                <option value="JPY">JPY 🇯🇵</option>
-                <option value="BRL">BRL 🇧🇷</option>
-                <option value="ILS">ILS 🇮🇱</option>
-                <option value="EUR">EUR 🇩🇪</option>
-                <option value="GBP">GBP 🇬🇧</option>
-                <option value="ITL">ITL 🇮🇹</option>
-            </select>
+                <!-- Swap Button -->
+                <button id="swapButton">🔄</button>
+
+                <!-- To Currency Dropdown -->
+                <select id="currencyTo">
+                    <option value="USD">USD 🇺🇸</option>
+                    <option value="INR">INR 🇮🇳</option>
+                    <option value="IRR">IRR 🇮🇷</option>
+                    <option value="NPR">NPR 🇳🇵</option>
+                    <option value="BTN">BTN 🇧🇹</option>
+                    <option value="CNY">CNY 🇨🇳</option>
+                    <option value="AUD">AUD 🇦🇺</option>
+                    <option value="JPY">JPY 🇯🇵</option>
+                    <option value="BRL">BRL 🇧🇷</option>
+                    <option value="ILS">ILS 🇮🇱</option>
+                    <option value="EUR">EUR 🇩🇪</option>
+                    <option value="GBP">GBP 🇬🇧</option>
+                    <option value="ITL">ITL 🇮🇹</option>
+                </select>
+            </div>
             
             <button onclick="convertCurrency()">Convert</button>
         </div>
@@ -57,4 +60,4 @@
     <p class="glowing-text">Created by Anya Shin!</p>
     <script src="script.js"></script>
 </body>
-        </html>
+</html>
