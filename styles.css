@@ -25,16 +25,17 @@ body {
 }
 
 button {
-    background-color: #6200ea;
-    color: white;
+    background-color: #FFD700; /* Dark yellow 💛 */
+    color: black;
     border: none;
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #3700b3;
+    background-color: #E6BE00; /* Slightly darker yellow on hover */
 }
 
 .glowing-text {
