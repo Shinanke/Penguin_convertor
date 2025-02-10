@@ -24,6 +24,33 @@ body {
     gap: 10px;
 }
 
+/* Swap Button Styling */
+.swap-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.swap-button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.swap-button:hover {
+    background-color: #FFD700;
+    color: black;
+}
+
 input[type="number"] {
     width: 100%;
     padding: 12px;
@@ -33,7 +60,7 @@ input[type="number"] {
 }
 
 button {
-    background-color: #FFD700; /* Dark Yellow */
+    background-color: #FFD700;
     color: black;
     border: none;
     padding: 10px;
@@ -61,7 +88,7 @@ button:hover {
     100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #6200ea, 0 0 30px #6200ea, 0 0 40px #6200ea, 0 0 50px #6200ea; }
 }
 
-/* Dropdown Styling for Smooth Scrolling */
+/* Dropdown Styling */
 select {
     appearance: none;
     padding: 10px;
@@ -76,7 +103,6 @@ select {
     scroll-behavior: smooth;
 }
 
-/* Prevent Lag in Scrolling */
 select:focus {
     outline: none;
 }
